@@ -46,11 +46,11 @@ public class ExampleTest {
 
         // Google's search is rendered dynamically with JavaScript.
         // Wait for the page to load, timeout after 10 seconds
-        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-            public Boolean apply(WebDriver d) {
-                return ! d.findElement(By.name("release")).getText().isEmpty();
-            }
-        });
+        // (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
+        //     public Boolean apply(WebDriver d) {
+        //         return ! d.findElement(By.name("release")).getText().isEmpty();
+        //     }
+        // });
 
         Thread.sleep(SLEEP);
     }
